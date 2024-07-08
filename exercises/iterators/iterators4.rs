@@ -3,7 +3,7 @@
 // Execute `rustlings hint iterators4` or use the `hint` watch subcommand for a
 // hint.
 
-// I AM NOT DONE
+
 
 pub fn factorial(num: u64) -> u64 {
     // Complete this function to return the factorial of num
@@ -15,6 +15,10 @@ pub fn factorial(num: u64) -> u64 {
     // For an extra challenge, don't use:
     // - recursion
     // Execute `rustlings hint iterators4` for hints.
+
+    (1..=num).product()
+    // 1..=num 创建了一个从 1 到 num（包括 num）的范围迭代器。
+    // product() 方法将该范围内的所有元素相乘，并返回结果。
 }
 
 #[cfg(test)]
